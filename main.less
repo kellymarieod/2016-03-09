@@ -6,9 +6,10 @@
 @logo-purple-light: lighten(@logo-purple, 70%);
 
 // TYPE VARIABLES
-@regular: 16px;
+@regular: 1em;
 @large: @regular * 1.75;
 @x-large: @large * 2;
+@xx-large: @large * 3;
 @fancy-font: font-family: 'Calligraffitti', cursive;
 @chalkboard-font: font-family: 'Cabin Sketch', cursive;
 
@@ -19,6 +20,11 @@ body {
   font-family: fantasy;
 }
 
+
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+}
 
 h1 {
   margin-bottom: 20px;
@@ -48,7 +54,7 @@ h2 {
 
 img {
   float: left;
-  width: 300px;
+  width: 30%;
   margin: 20px 20px 20px 0;
 }
 
@@ -57,6 +63,30 @@ p {
     float: right;
     margin-left: 20px;
     margin-right: 0px;
-    width: 100px;
+    width: 50%;
   }
+}
+
+
+
+
+
+// BREAKPOINTS
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 2em;
+    // background-color: orange;
+  }
+
+  // h1 {
+  //   font-size: @xx-large;
+  // }
+  //
+  // h2 {
+  //   font-size: @x-large;
+  // }
+  //
+  // p {
+  //   font-size: @large;
+  // }
 }

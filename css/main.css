@@ -3,21 +3,25 @@
 body {
   background-color: #3a133a;
   color: #ffb3ff;
-  font-size: 16px;
+  font-size: 1em;
   font-family: fantasy;
+}
+.page-container {
+  width: 90%;
+  margin: 0 auto;
 }
 h1 {
   margin-bottom: 20px;
   border-top: 15px solid #4d004d;
   color: white;
-  font-size: 56px;
+  font-size: 3.5em;
   font-family: 'Cabin Sketch', cursive;
 }
 h1 + h2 {
   margin-top: -20px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 1.75em;
   font-family: 'Calligraffitti', cursive;
 }
 h2 + p {
@@ -25,12 +29,17 @@ h2 + p {
 }
 img {
   float: left;
-  width: 300px;
+  width: 30%;
   margin: 20px 20px 20px 0;
 }
 p img {
   float: right;
   margin-left: 20px;
   margin-right: 0px;
-  width: 100px;
+  width: 50%;
+}
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 2em;
+  }
 }
