@@ -9,12 +9,14 @@
 @regular: 16px;
 @large: @regular * 1.75;
 @x-large: @large * 2;
-
+@fancy-font: font-family: 'Calligraffitti', cursive;
+@chalkboard-font: font-family: 'Cabin Sketch', cursive;
 
 body {
   background-color: @logo-mute;
   color: @logo-purple-light;
   font-size: @regular;
+  font-family: fantasy;
 }
 
 
@@ -23,6 +25,7 @@ h1 {
   border-top: 15px solid @logo-purple;
   color:white;
   font-size: @x-large;
+  font-family: 'Cabin Sketch', cursive;
 
   + h2 {
     margin-top: -20px;
@@ -36,7 +39,24 @@ h1 {
 
 h2 {
   font-size: @large;
+  font-family: 'Calligraffitti', cursive;
   + p {
   margin-top: 36px;
+  }
+}
+
+
+img {
+  float: left;
+  width: 300px;
+  margin: 20px 20px 20px 0;
+}
+
+p {
+  img {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0px;
+    width: 100px;
   }
 }

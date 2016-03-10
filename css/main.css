@@ -1,20 +1,36 @@
+@fancy-font : font-family: 'Calligraffitti', cursive;
+@chalkboard-font : font-family: 'Cabin Sketch', cursive;
 body {
   background-color: #3a133a;
   color: #ffb3ff;
   font-size: 16px;
+  font-family: fantasy;
 }
 h1 {
   margin-bottom: 20px;
   border-top: 15px solid #4d004d;
   color: white;
   font-size: 56px;
+  font-family: 'Cabin Sketch', cursive;
 }
 h1 + h2 {
   margin-top: -20px;
 }
 h2 {
   font-size: 28px;
+  font-family: 'Calligraffitti', cursive;
 }
 h2 + p {
   margin-top: 36px;
+}
+img {
+  float: left;
+  width: 300px;
+  margin: 20px 20px 20px 0;
+}
+p img {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px;
+  width: 100px;
 }
